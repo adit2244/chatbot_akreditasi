@@ -1,0 +1,179 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+      to bottom,
+      rgba(15, 32, 70, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("https://www.uib.ac.id/wp-content/uploads/2024/05/new-gedung-baru-UIB-1.gif"); /* Gambar background */
+  background-size: cover; /* Gambar memenuhi seluruh layar */
+  background-position: center; /* Gambar di tengah */
+  background-repeat: no-repeat; /* Gambar tidak berulang */
+}
+
+/* Ensure full height layout */
+body,
+html {
+  height: 100%; /* Ensure full height */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Full screen background */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("your-image-path.jpg") no-repeat center center fixed; /* Add your background image */
+  background-size: cover;
+  z-index: -1; /* Make sure the background stays behind the chat */
+}
+
+/* Chat container */
+.chat-container {
+  width: 80%;
+  max-width: 600px;
+  height: 80vh; /* Set a fixed height */
+  background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Enable scrolling when content exceeds height */
+}
+
+/* Styling for chat messages */
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.chat-message {
+  padding: 10px 20px;
+  border-radius: 15px;
+  max-width: 70%; /* Limit message width */
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.bot-message {
+  background-color: #004c78; /* UIB brand color */
+  color: white;
+  align-self: flex-start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for bot messages */
+}
+
+.user-message {
+  background-color: #e1e1e1; /* Light gray for user messages */
+  color: #333;
+  align-self: flex-end;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for user messages */
+}
+
+/* Input area styling */
+.input-area {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  border-top: 0px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border-radius: 15px;
+  transform: translateX(-50%); /* Center the input area horizontally */
+  width: 76%;
+  margin-bottom: 25px; /* Add this to move the input area slightly down */
+  z-index: 111111;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #333;
+  box-sizing: border-box;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.input-area input:focus {
+  border-color: #004c78; /* Highlight input on focus */
+}
+
+.input-area button {
+  background-color: #004c78; /* UIB brand color */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Button styles */
+.new-chat-button {
+  background-color: #004c78; /* UIB brand color */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.new-chat-button:hover {
+  background-color: #00395b; /* Darker shade on hover */
+}
+
+.new-chat-button:active {
+  background-color: #002a45; /* Even darker shade on click */
+}
+
+.input-area button:hover {
+  background-color: #00395b; /* Darker shade on hover */
+}
+
+.input-area button:active {
+  background-color: #002a45; /* Even darker shade on click */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .chat-container {
+    padding: 15px;
+  }
+
+  .chat-message {
+    max-width: 85%; /* Increase message width for smaller screens */
+  }
+
+  .input-area {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-area input {
+    margin-bottom: 10px; /* Space between input field and button */
+  }
+
+  .input-area button {
+    width: 100%; /* Make the send button full-width on smaller screens */
+  }
+}

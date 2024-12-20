@@ -1,0 +1,206 @@
+{
+  "intent": {
+    "permintaan_data_kelulusan": {
+      "keywords": [
+        "kelulusan",
+        "lulus",
+        "npm",
+        "lulusan",
+        "semester",
+        "statistik lulusan",
+        "status",
+        "tahun",
+        "dari",
+        "sampai",
+        "hingga"
+      ],
+      "entities": {
+        "semester_lulus": [
+          { "kode": "20192", "tahun": "2019", "semester": "Genap" },
+          { "kode": "20201", "tahun": "2020", "semester": "Ganjil" },
+          { "kode": "20202", "tahun": "2020", "semester": "Genap" },
+          { "kode": "20211", "tahun": "2021", "semester": "Ganjil" },
+          { "kode": "20212", "tahun": "2021", "semester": "Genap" },
+          { "kode": "20221", "tahun": "2022", "semester": "Ganjil" },
+          { "kode": "20222", "tahun": "2022", "semester": "Genap" },
+          { "kode": "20231", "tahun": "2023", "semester": "Ganjil" },
+          { "kode": "20232", "tahun": "2023", "semester": "Genap" }
+        ],
+        "status": [
+          "Lulus",
+          "Aktif",
+          "Keluar",
+          "Drop-out(putus studi)",
+          "Non-aktif",
+          "Meninggal Dunia",
+          "Cuti",
+          "Mahasiswa Asing"
+        ],
+        "prodi": [
+          "Magister Manajemen",
+          "Magister Hukum",
+          "Pariwisata",
+          "Pendidikan Bahasa Inggris",
+          "Sistem Informasi",
+          "Teknik Sipil",
+          "Akuntansi",
+          "Manajemen",
+          "Ilmu Hukum",
+          "Arsitektur",
+          "Teknologi Informasi",
+          "Teknik Elektro"
+        ],
+        "angkatan": ["2019", "2020", "2021", "2022", "2023"],
+        "npm_mhs": []
+      }
+    },
+    "permintaan_data_penelitian": {
+      "keywords": [
+        "penelitian",
+        "data penelitian",
+        "penelitian dosen",
+        "laporan penelitian",
+        "riset dosen",
+        "publikasi",
+        "jenis penelitian"
+      ],
+      "entities": {
+        "nidn_dosen": [],
+        "judul_penelitian": [],
+        "tgl_terbit": [],
+        "jenis_publikasi": [
+          "Sinta",
+          "Scopus",
+          "Nasional non-sinta",
+          "International"
+        ],
+        "tingkat_publikasi": [
+          "Nasional",
+          "Internasional",
+          "Jurnal Nasional Terakreditasi SINTA 3-6",
+          "Jurnal Ilmiah Internasional Terindeks Scopus Q1-Q3",
+          "Jurnal Nasional terakreditasi Kemenristekdikti",
+          "Jurnal Nasional Terakreditasi SINTA 1-2",
+          "Jurnal Nasional",
+          "Jurnal Internasional Terindeks Scopus Q4",
+          "Jurnal Internasional terindeks pada basis data internasional",
+          "Jurnal Internasional bereputasi",
+          "Jurnal nasional terakreditasi SINTA 5-6",
+          "Jurnal nasional terakreditasi SINTA 1-2",
+          "Jurnal Internasional Terindeks Scopus Q1-Q3",
+          "Jurnal nasional terakreditasi SINTA 3-4 atau Jurnal Internasional Terindeks",
+          "Jurnal Internasional terindeks SCOPUS dengan SJR di atas 0.15",
+          "Jurnal Nasional terakreditasi Dikti"
+        ],
+        "tahun": ["2019", "2020", "2021", "2022", "2023"]
+      }
+    },
+    "permintaan_data_kegiatan": {
+      "keywords": [
+        "kegiatan",
+        "kegiatan mahasiswa",
+        "laporan kegiatan",
+        "event mahasiswa",
+        "ekstrakurikuler",
+        "tingkat kegiatan",
+        "seminar",
+        "workshop",
+        "pelatihan",
+        "lokakarya",
+        "konferensi"
+      ],
+      "entities": {
+        "npm_mhs": [],
+        "nama_kegiatan": [
+          "seminar",
+          "lokakarya",
+          "pelatihan",
+          "workshop",
+          "konferensi",
+          "webinar"
+        ],
+        "tingkat_kegiatan": ["lokal", "nasional", "international", "provinsi"],
+        "tgl_kegiatan": [],
+        "tahun": ["2021", "2022", "2023"],
+        "periode": ["tahun lalu", "tahun ini", "dua tahun terakhir"]
+      }
+    },
+    "permintaan_data_ipk": {
+      "keywords": [
+        "ipk",
+        "IPK",
+        "nilai IPK",
+        "rata-rata nilai",
+        "rata-rata ipk",
+        "rekap ipk",
+        "indeks prestasi kumulatif",
+        "di atas",
+        "nilai"
+      ],
+      "entities": {
+        "npm_mhs": [],
+        "nama_mhs": [],
+        "prodi": [
+          "Magister Manajemen",
+          "Magister Hukum",
+          "Pariwisata",
+          "Pendidikan Bahasa Inggris",
+          "Sistem Informasi",
+          "Teknik Sipil",
+          "Akuntansi",
+          "Manajemen",
+          "Ilmu Hukum",
+          "Arsitektur",
+          "Teknologi Informasi",
+          "Teknik Elektro"
+        ],
+        "angkatan": ["2019", "2020", "2021", "2022", "2023"],
+        "rata-rata": [],
+        "status": [
+          "Lulus",
+          "Aktif",
+          "Keluar",
+          "Drop-out",
+          "Non-aktif",
+          "Meninggal Dunia",
+          "Cuti",
+          "Mahasiswa Asing"
+        ],
+        "semester_lulus": [
+          { "kode": "20192", "tahun": "2019", "semester": "Genap" },
+          { "kode": "20201", "tahun": "2020", "semester": "Ganjil" },
+          { "kode": "20202", "tahun": "2020", "semester": "Genap" },
+          { "kode": "20211", "tahun": "2021", "semester": "Ganjil" },
+          { "kode": "20212", "tahun": "2021", "semester": "Genap" },
+          { "kode": "20221", "tahun": "2022", "semester": "Ganjil" },
+          { "kode": "20222", "tahun": "2022", "semester": "Genap" },
+          { "kode": "20231", "tahun": "2023", "semester": "Ganjil" },
+          { "kode": "20232", "tahun": "2023", "semester": "Genap" }
+        ]
+      }
+    },
+    "permintaan_data_dosen": {
+      "keywords": ["data dosen", "informasi dosen", "dosen", "nidn", "nama"],
+      "entities": {
+        "id_dosen": [],
+        "nidn_dosen": [],
+        "nama_dosen": []
+      }
+    },
+    "sapaan": {
+      "keywords": ["halo", "hai", "hello", "selamat datang", "hallo"],
+      "responses": [
+        "Halo! Ada yang bisa saya bantu?",
+        "Hai, bagaimana saya bisa membantu Anda?",
+        "Selamat datang! Silakan ajukan pertanyaan Anda."
+      ]
+    },
+    "perkenalan": {
+      "keywords": ["siapa kamu", "perkenalan", "apa fungsi kamu", "kamu siapa"],
+      "responses": [
+        "Saya adalah chatbot yang bertugas membantu Anda mendapatkan data. Silakan tanyakan apa saja terkait informasi universitas.",
+        "Halo! Saya di sini untuk membantu Anda dengan pertanyaan terkait data akademik."
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+Intent;Kalimat;Entitas
+permintaan_data_kelulusan;Saya ingin tahu data kelulusan untuk tahun 2022.;tahun: 2022
+permintaan_data_kelulusan;Bisa tolong berikan saya data lulusan 2021 dari jurusan teknologi informasi?;tahun: 2021, jurusan: teknologi informasi
+permintaan_data_kelulusan;Mohon data kelulusan untuk jurusan manajemen tahun 2020.;tahun: 2020, jurusan: manajemen
+permintaan_data_kelulusan;Berapa banyak lulusan tahun 2023 dari fakultas bisnis dan manajemen?;tahun: 2023, fakultas: bisnis dan manajemen
+permintaan_data_kelulusan;Tolong data lulusan dari tahun 2022 sampai 2023.;tahun_mulai: 2022, tahun_selesai: 2023
+permintaan_data_kelulusan;Saya butuh informasi jumlah kelulusan jurusan Ilmu hukum selama 5 tahun terakhir.;jurusan: ilmu hukum, periode: 5 tahun terakhir
+permintaan_data_penelitian;Saya butuh data penelitian dosen selama 3 tahun terakhir.;periode: 3 tahun terakhir
+permintaan_data_penelitian;Tolong kirimkan saya data penelitian dosen teknik sipil.;jurusan: teknik sipil
+permintaan_data_penelitian;Ada data penelitian dari jurusan arsitektur tahun 2021?;tahun: 2021, jurusan: arsitektur
+permintaan_data_penelitian;Saya ingin laporan penelitian dari dosen jurusan sistem informasi dari tahun 2019.;tahun: 2019, jurusan: sistem informasi
+permintaan_data_penelitian;Apakah ada data penelitian yang dilakukan oleh dosen akuntansi dalam lima tahun terakhir?;jurusan: akuntansi, periode 5 tahun terakhir
+permintaan_data_penelitian;Bisa berikan saya informasi tentang penelitian yang dilakukan pada tahun 2020 di fakultas imlu komputer?;tahun: 2020, fakuktas: ilmu komputer
+permintaan_data_kegiatan;Saya butuh data kegiatan yang dilakukan oleh mahasiswa pada tahun 2022.;tahun: 2022
+permintaan_data_kegiatan;Apa saja kegiatan yang dilakukan oleh mahasiswa jurusan ilmu hukum pada tahun lalu?;jurusan: ilmu hukum, periode: tahun lalu
+permintaan_data_kegiatan;Ada laporan kegiatan fakultas hukum tahun ini?;fakultas: hukum, periode: tahun ini
+permintaan_data_kegiatan;Bisa tolong kirimkan saya data kegiatan seminar internasional yang diikuti oleh mahasiswa fakultas bisnis dan manajemen?;fakultas: bisnis dan manajemen, tingkat: internasional
+permintaan_data_kegiatan;Saya perlu laporan kegiatan ekstrakurikuler mahasiswa selama dua tahun terakhir.;periode: dua tahun terakhir
+permintaan_data_kegiatan;Mohon data kegiatan tingkat internasional yang diadakan oleh kampus pada tahun 2021.;tahun: 2021, tingkat: internasional
+permintaan_data_ipk;Tolong kirimkan saya data IPK mahasiswa teknologi informasi angkatan 2020.;jurusan: teknologi informasi, angkatan: 2020
+permintaan_data_ipk;Saya ingin tahu rata-rata IPK untuk angkatan 2019 dari fakultas hukum.;angkatan: 2019, fakultas: hukum
+permintaan_data_ipk;Ada informasi mengenai rata-rata IPK mahasiswa tahun 2022?;tahun: 2022
+permintaan_data_ipk;Saya butuh data IPK mahasiswa dengan jurusan akuntansi dari tahun lalu.;jurusan: akuntansi, periode: tahun lalu
+permintaan_data_ipk;Berapa rata-rata IPK mahasiswa sistem informasi selama lima tahun terakhir?;jurusan: sistem informasi, periode: 5 tahun terakhir
+permintaan_data_ipk;Mohon berikan data rekap IPK mahasiswa di fakultas ilmu komputer tahun 2021.;fakultas: ilmu komputer, tahun: 2021

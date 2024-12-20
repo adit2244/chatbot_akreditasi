@@ -1,0 +1,306 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+      to bottom,
+      rgba(15, 32, 70, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    /* Gradien dengan lebih rendah opacity */
+      url("https://www.uib.ac.id/wp-content/uploads/2024/05/new-gedung-baru-UIB-1.gif");
+  /* Gambar background */
+  background-size: cover;
+  /* Gambar memenuhi seluruh layar */
+  background-position: center;
+  /* Gambar di tengah */
+  background-repeat: no-repeat;
+  /* Gambar tidak berulang */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Warna putih dengan 80% opacity */
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  /* Sudut membulat */
+}
+
+.header img {
+  max-width: 100%;
+  /* Gambar memenuhi ruang yang tersedia */
+  height: auto;
+  /* Tinggi gambar otomatis menyesuaikan */
+  max-height: 100px;
+  /* Tinggi maksimal gambar 100px */
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
+
+.help-button {
+  background-color: #004c78;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.main-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Warna putih dengan 80% opacity */
+  padding: 70px 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+  border-radius: 15px;
+  /* Sudut membulat */
+}
+
+.main-content h1 {
+  color: #004c78;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.main-content p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.search-bar button {
+  background-color: #004c78;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #666;
+  text-decoration: none;
+}
+
+.logo {
+  margin-top: 50px;
+}
+
+.logo img {
+  max-width: 100%;
+  /* Gambar memenuhi ruang yang tersedia */
+  height: auto;
+  /* Tinggi gambar otomatis menyesuaikan */
+  max-height: 180px;
+  /* Tinggi maksimal gambar 100px */
+}
+
+@media (max-width: 768px) {
+  .header,
+  .main-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+}
+
+/* Chat container setup */
+.chat-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Warna putih dengan 80% opacity */
+  /* Slight transparency for background */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 4px;
+  border-radius: 15px;
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  height: calc(91% - 160px);
+  /* Ensure the chat area takes available space */
+}
+
+/* Styling for chat messages */
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.chat-message {
+  padding: 10px 20px;
+  border-radius: 15px;
+  max-width: 70%;
+  /* Limit message width */
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.bot-message {
+  background-color: #004c78;
+  /* UIB brand color */
+  color: white;
+  align-self: flex-start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Optional shadow for bot messages */
+}
+
+.user-message {
+  background-color: #e1e1e1;
+  /* Light gray for user messages */
+  color: #333;
+  align-self: flex-end;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Optional shadow for user messages */
+}
+
+/* Input area styling */
+.input-area {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  border-top: 0px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Warna putih dengan 80% opacity */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border-radius: 15px;
+  transform: translateX(-50%);
+  /* Center the input area horizontally */
+  width: 76%;
+  margin-bottom: 25px;
+  /* Add this to move the input area slightly down */
+}
+
+.input-area input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #333;
+  box-sizing: border-box;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.input-area input:focus {
+  border-color: #004c78;
+  /* Highlight input on focus */
+}
+
+.input-area button {
+  background-color: #004c78;
+  /* UIB brand color */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.new-chat-button {
+  background-color: #004c78;
+  /* UIB brand color */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.new-chat-button:hover {
+  background-color: #00395b;
+  /* Darker shade on hover */
+}
+
+.new-chat-button:active {
+  background-color: #002a45;
+  /* Even darker shade on click */
+}
+
+.input-area button:hover {
+  background-color: #00395b;
+  /* Darker shade on hover */
+}
+
+.input-area button:active {
+  background-color: #002a45;
+  /* Even darker shade on click */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .chat-container {
+    padding: 15px;
+  }
+
+  .chat-message {
+    max-width: 85%;
+    /* Increase message width for smaller screens */
+  }
+
+  .input-area {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-area input {
+    margin-bottom: 10px;
+    /* Space between input field and button */
+  }
+
+  .input-area button {
+    width: 100%;
+    /* Make the send button full-width on smaller screens */
+  }
+}
